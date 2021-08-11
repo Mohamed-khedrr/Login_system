@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                font-family: 'Style Script', cursive;
+                text-align: center;
+                font-size: 2em;
+            }
+            input{
+                font-family: 'Style Script', cursive;
+                font-size: 1.2em;
+
+            }
+
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Sing in</h1>
+        <form action="../php/login.php" method="POST">
+            <input type="text" name="user" placeholder="user name">
+            <br/>
+            <input type="password" name="password" placeholder="password">
+            <br/>
+            <input type="submit" value="sign in">
+        </form>
+    </body>
+</html>

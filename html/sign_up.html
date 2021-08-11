@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+        font-family: "Style Script", cursive;
+        font-size: 1.5em;
+      }
+      input {
+        font-family: "Style Script", cursive;
+        font-size: 1.2em;
+        margin: 5px;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Sign up</h1>
+    <form action="../php/sign_up.php" method="POST">
+      <input type="text" name="fname" placeholder="First name" /><br />
+      <input type="text" name="lname" placeholder="Last name" /><br />
+      <input type="tel" name="phone" placeholder="phone" /><br />
+      <input type="email" name="email" placeholder="email" /><br />
+      <input type="text" name="user" placeholder="user name" /><br />
+      <input type="password" name="password" placeholder="password" /><br />
+
+      <label for="male">male</label>
+      <input id="male" type="radio" value="male" name="gender" />
+      <label for="female">female</label>
+      <input id="female" type="radio" value="female" name="gender" /><br />
+
+      <input type="submit" value="sign up" /><br />
+    </form>
+  </body>
+</html>
